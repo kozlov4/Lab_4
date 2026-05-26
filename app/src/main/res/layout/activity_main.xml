@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додавання публікацій (Рівень 2)"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPostContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Текст нового поста" />
+
+        <Button
+            android:id="@+id/btnAddPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Опублікувати пост" />
+
+        <EditText
+            android:id="@+id/etCommentContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Текст коментаря до останнього поста"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnAddComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Додати коментар" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пошук та Безпека (Рівень 3 і 4)"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etSearchQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть текст для безпечного пошуку" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Безпечний пошук (Захист від SQL Injection)" />
+
+        <Button
+            android:id="@+id/btnShowAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Показати всю структуру БД"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvConsoleLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Логи бази даних з'являться тут..."
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:background="#EEEEEE"
+            android:padding="8dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
